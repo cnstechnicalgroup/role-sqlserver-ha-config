@@ -43,7 +43,7 @@ Examples
   hosts: dbservers
   sudo: yes
   roles: 
-  - cns.role-sqlserver-ha-config
+    - cns.role-sqlserver-ha-config
   gather_facts: yes
 
 ```
