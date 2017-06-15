@@ -13,12 +13,11 @@ Role Variables
 
 In the current version, you can specify the following variables:
 
-| Name                  | Default |                                                              |
-|-----------------------|---------|--------------------------------------------------------------|
-| use_hosts_file        |   ---   | use /etc/hosts file for DNS resolution               .  |
-| primary_host_ip       |   ---   | IP Address for the principal server in Always On     .  |
-| secondary_host_ip     |   ---   | IP Address for the replica server in Always On       .  |
-
+| Name                  | Optional | Default | Description                                                                                                                                                         |
+|-----------------------|----------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| use_hosts_file        |  yes     |   no    | Use /etc/hosts file for DNS resolution. A yes value will add an entry in /etc/hosts for the primary and secondary hosts participating in the mirror              .  |
+| primary_host_ip       |  yes     |   ---   | IP Address for the principal server in Always On. This is required only if use_hosts_file is yes                                                                 .  |
+| secondary_host_ip     |  yes     |   ---   | IP Address for the replica server in Always On. This is required only if use_hosts_file is yes                                                                   .  |
 
 Dependencies
 ------------
