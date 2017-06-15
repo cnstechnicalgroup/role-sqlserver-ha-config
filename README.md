@@ -1,4 +1,4 @@
-Role: role.sqlserver
+Role: role.sqlserver-ha-config
 ========
 
 Ansible role install SQL Server High Availability Components and configure hosts for mirror communications
