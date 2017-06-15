@@ -1,4 +1,4 @@
-Role: role.sqlserver-ha-config
+Role: cns.sqlserver-ha-config
 ========
 
 Ansible role install SQL Server High Availability Components and configure hosts for mirror communications
@@ -39,11 +39,11 @@ Examples
 
 ```yaml
 ---
-- name: role.sqlserver-ha-config role 
+- name: cns.sqlserver-ha-config role 
   hosts: dbservers
   sudo: yes
   roles: 
-    - cns.role-sqlserver-ha-config
+    - cns.sqlserver-ha-config
   gather_facts: yes
 
 ```
