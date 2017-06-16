@@ -13,4 +13,4 @@ galaxy_info:
      versions:
       - 7
 dependencies:
-  - { role: cns.sqlserver-server }
+  - { role: role-sqlserver-server }
