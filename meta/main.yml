@@ -8,5 +8,9 @@ galaxy_info:
   galaxy_tags:
     - sqlserver
     - database
+  platforms:
+   - name: EL
+     versions:
+      - 7
 dependencies:
   - { role: cns.sqlserver-server }
