@@ -7,6 +7,8 @@ Requirements
 ------------
 
 * CentOS7 
+* Ubuntu Xenial Xenus
+
 
 Role Variables
 --------------
