@@ -23,6 +23,10 @@ In the current version, you can specify the following variables:
 | primary_host_name     |  no      |   ---   | Primary host name for the server that is being mirrored (principal)                                                                                              .  |
 | secondary_host_name   |  no      |   ---   | Secondary host name for the server that is mirroring (replica)                                                                                                   .  |
 
+
+* If you choose to use /etc/hosts to resolve each machine that is participating in the AG, don't forget to add those ip addresses and hosts to the /etc/hosts file
+
+
 Dependencies
 ------------
 
