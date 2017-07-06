@@ -24,7 +24,7 @@ In the current version, you can specify the following variables:
 | secondary_host_name   |  no      |   ---   | Secondary host name for the server that is mirroring (replica)                                                                                                   .  |
 
 
-* If you choose to use /etc/hosts to resolve each machine that is participating in the AG, don't forget to add those ip addresses and hosts to the /etc/hosts file
+* If you choose to use /etc/hosts to resolve each machine that is participating in the AG, don't forget to add those ip addresses and hosts to the /etc/hosts file of the ansible server. This is necessary because the ansible server is used to run sqlcmd.  
 
 
 Dependencies
