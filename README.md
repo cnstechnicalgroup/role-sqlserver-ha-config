@@ -22,6 +22,8 @@ In the current version, you can specify the following variables:
 | secondary_host_ip     |  yes     |   ---   | IP Address for the replica server in Always On. This is required only if use_hosts_file is yes                                                                   .  |
 | primary_host_name     |  no      |   ---   | Primary host name for the server that is being mirrored (principal)                                                                                              .  |
 | secondary_host_name   |  no      |   ---   | Secondary host name for the server that is mirroring (replica)                                                                                                   .  |
+| sa_password           |  no      |   ---   | system administrator password for SQL Server install, required for dependency                                                                                    .  |
+
 
 
 * If you choose to use /etc/hosts to resolve each machine that is participating in the AG, don't forget to add those ip addresses and hosts to the /etc/hosts file of the ansible server. This is necessary because the ansible server is used to run sqlcmd.  
@@ -59,5 +61,7 @@ Examples
   roles: 
     - cnstechnicalgroup.sqlserver-ha-config
   gather_facts: yes
-
+  environment:
+   SA_PASSWORD: "{{sa_password}}"
+   ACCEPT_EULA: "Y"
 ```
